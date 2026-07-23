@@ -58,7 +58,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: url('/fondos/tierra-uruguay.png') center center / cover no-repeat;
+  background: var(--hero-bg) center center / cover no-repeat;
 }
 
 body::after {

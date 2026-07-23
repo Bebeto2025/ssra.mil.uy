@@ -5,6 +5,7 @@
  * 2. Añada un objeto al array `ecosistemaInstituciones`.
  * 3. El mapa recalculará automáticamente la disposición orbital.
  */
+import { publicUrl } from '../lib/publicUrl'
 import { institution } from './institution'
 export interface EcosistemaInstitucion {
   id: string
@@ -32,7 +33,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'IAU',
     displayName: 'Instituto Antártico Uruguayo (IAU)',
     href: 'https://iau.gub.uy/',
-    logo: '/ecosistema/iau.png',
+    logo: publicUrl('/ecosistema/iau.png'),
   },
   {
     id: 'dinacia',
@@ -40,7 +41,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'DINACIA',
     displayName: 'Dirección Nacional de Aviación Civil e Infraestructura Aeronáutica (DINACIA)',
     href: 'https://www.dinacia.gub.uy/',
-    logo: '/ecosistema/dinacia.jpg',
+    logo: publicUrl('/ecosistema/dinacia.jpg'),
   },
   {
     id: 'iaa',
@@ -48,7 +49,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'IAA',
     displayName: 'Instituto de Adiestramiento Aeronáutico (IAA)',
     href: 'https://iaauruguay.edu.uy/',
-    logo: '/ecosistema/iaa.png',
+    logo: publicUrl('/ecosistema/iaa.png'),
   },
   {
     id: 'sne',
@@ -56,7 +57,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'SNE',
     displayName: 'Sistema Nacional de Emergencias (SNE)',
     href: 'https://www.gub.uy/sistema-nacional-emergencias/',
-    logo: '/ecosistema/sinae.png',
+    logo: publicUrl('/ecosistema/sinae.png'),
   },
   {
     id: 'ide',
@@ -64,7 +65,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'IDE',
     displayName: 'Infraestructura de Datos Espaciales (IDE)',
     href: 'https://www.gub.uy/infraestructura-datos-espaciales/',
-    logo: '/ecosistema/ide.png',
+    logo: publicUrl('/ecosistema/ide.png'),
   },
   {
     id: 'utec',
@@ -72,7 +73,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'UTEC',
     displayName: 'Universidad Tecnológica del Uruguay (UTEC)',
     href: 'https://utec.edu.uy/es/',
-    logo: '/ecosistema/utec.svg',
+    logo: publicUrl('/ecosistema/utec.svg'),
   },
   {
     id: 'picudo-rojo',
@@ -80,7 +81,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'PRU',
     displayName: 'Picudo Rojo Uruguay (PRU)',
     href: 'https://www.picudorojouruguay.com/',
-    logo: '/ecosistema/picudo-rojo.svg',
+    logo: publicUrl('/ecosistema/picudo-rojo.svg'),
   },
   {
     id: 'space-uruguay',
@@ -88,7 +89,7 @@ export const ecosistemaInstituciones: EcosistemaInstitucion[] = [
     shortName: 'SU',
     displayName: 'Space Uruguay (SU)',
     href: 'https://www.spaceuruguay.org/',
-    logo: '/ecosistema/space-uruguay.svg',
+    logo: publicUrl('/ecosistema/space-uruguay.svg'),
   },
 ]
 

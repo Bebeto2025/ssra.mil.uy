@@ -1,3 +1,5 @@
+import { publicUrl } from '../lib/publicUrl'
+
 export const institution = {
   name: {
     fau: 'Fuerza Aérea Uruguaya',
@@ -7,15 +9,15 @@ export const institution = {
   },
   shields: {
     /** Escudo ESCRECCE — Comando Aéreo de Operaciones */
-    cao: '/escudos/escudo-escrecce.png',
+    cao: publicUrl('/escudos/escudo-escrecce.png'),
     /** Logo SSRA — Servicio de Sensores Remotos Aeroespaciales (FAU) */
-    ssra: '/escudos/ssra-logo.jpeg',
+    ssra: publicUrl('/escudos/ssra-logo.jpeg'),
     /** Emblema I.S.R — Inteligencia, Vigilancia y Reconocimiento */
-    roundel: '/escudos/isr.png',
+    roundel: publicUrl('/escudos/isr.png'),
     /** Alas — Fuerza Aérea Uruguaya (Wikimedia Commons) */
-    wings: '/escudos/fau-alas.svg',
+    wings: publicUrl('/escudos/fau-alas.svg'),
     /** Bandera de Uruguay — Wikimedia Commons */
-    flag: '/escudos/uruguay-bandera.svg',
+    flag: publicUrl('/escudos/uruguay-bandera.svg'),
   },
   imageCredits: {
     caoEscudo: 'Escudo ESCRECCE — Comando Aéreo de Operaciones, Fuerza Aérea Uruguaya',

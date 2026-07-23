@@ -1,3 +1,5 @@
+import { publicUrl } from '../lib/publicUrl'
+
 export interface GalleryItem {
   id: string
   type: 'photo' | 'video'
@@ -57,13 +59,13 @@ export const galleryItems: GalleryItem[] = [
     type: 'photo',
     title: 'Operaciones SSRA',
     description: 'Registro de actividades del Servicio de Sensores Remotos Aeroespaciales.',
-    src: '/galeria/el-pais-ssra.webp',
+    src: publicUrl('/galeria/el-pais-ssra.webp'),
   },
   {
     id: '8',
     type: 'photo',
     title: 'Base Antártica Artigas',
     description: 'Instalaciones uruguayas en la Antártida — presencia nacional en el continente blanco.',
-    src: '/galeria/medios-publicos.jpg',
+    src: publicUrl('/galeria/medios-publicos.jpg'),
   },
 ]
