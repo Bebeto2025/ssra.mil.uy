@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mi aplicación</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  
+<div class="row text-center">
+<img src="images/error.png" width="50" height="50" />
+<h2>Ocurrio un error</h2>
+	<h5>Invalid controller specified (favicon.ico)</h5>
+	Trace Error
+	<hr>
+	<pre>
+	#0 /home/dinacia/public_html/atoms/vendor/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#1 /home/dinacia/public_html/atoms/vendor/Zend/Application/Bootstrap/Bootstrap.php(106): Zend_Controller_Front->dispatch()
+#2 /home/dinacia/public_html/atoms/vendor/Zend/Application.php(400): Zend_Application_Bootstrap_Bootstrap->run()
+#3 /home/dinacia/public_html/atoms/public/index.php(39): Zend_Application->run()
+#4 {main}
+	</pre>
+</div>
+
+<hr />
+<p class="text-center">Rinc&oacute;n 518 Piso 2 Tel&eacute;fono (+598) 2916 6916 Montevideo, Uruguay email:<a href="mailto:anii@anii.org.uy">anii@anii.org.uy</a></p>
+</div> 
+</body>
+</html>

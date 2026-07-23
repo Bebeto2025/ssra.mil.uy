@@ -1,0 +1,112 @@
+:root {
+  --bg-deep: #080c10;
+  --bg-panel: #0f1419;
+  --bg-elevated: #151c24;
+  --bg-alt: #111820;
+
+  --green-dark: #2a3d2a;
+  --green-mid: #4a6b4a;
+  --green-light: #6b8f6b;
+  --green-glow: rgba(107, 143, 107, 0.25);
+
+  --steel: #ffffff;
+  --steel-dim: #ffffff;
+  --text: #ffffff;
+  --text-muted: #ffffff;
+  --text-bright: #ffffff;
+
+  --accent: #c4a35a;
+  --accent-dim: #9a7d3f;
+  --border: rgba(139, 156, 173, 0.15);
+  --border-strong: rgba(107, 143, 107, 0.35);
+
+  --font-display: 'Orbitron', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --radius: 4px;
+  --radius-lg: 8px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --transition: 0.2s ease;
+
+  --glass-section-bg: rgba(8, 12, 16, 0.12);
+  --glass-panel-bg: rgba(15, 20, 25, 0.52);
+  --glass-blur: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg-deep);
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: url('/fondos/tierra-uruguay.png') center center / cover no-repeat;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 16, 0.42) 0%,
+    rgba(8, 12, 16, 0.52) 45%,
+    rgba(8, 12, 16, 0.58) 100%
+  );
+  pointer-events: none;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--green-light);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.container {
+  width: min(1120px, 100% - 2rem);
+  margin-inline: auto;
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="World Space Week isotype">
+  <defs>
+    <linearGradient id="wswPurple" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#7a20df" />
+      <stop offset="0.52" stop-color="#9727e8" />
+      <stop offset="1" stop-color="#b935f5" />
+    </linearGradient>
+    <mask id="leafCutout" maskUnits="userSpaceOnUse">
+      <rect width="1024" height="1024" fill="white" />
+      <ellipse cx="506" cy="530" rx="248" ry="400" transform="rotate(-42 506 530)" fill="black" />
+    </mask>
+  </defs>
+  <g mask="url(#leafCutout)">
+    <rect x="146" y="300" width="610" height="610" fill="url(#wswPurple)" />
+    <circle cx="610" cy="405" r="380" fill="url(#wswPurple)" />
+  </g>
+</svg>
