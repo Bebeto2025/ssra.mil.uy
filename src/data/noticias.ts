@@ -13,6 +13,18 @@ export interface NoticiaItem {
 
 export const noticiasItems: NoticiaItem[] = [
   {
+    id: '6',
+    publishedAt: '2026-08-06',
+    date: '18 de agosto de 2026',
+    title: '48.º aniversario del Servicio de Sensores Remotos Aeroespaciales',
+    excerpt:
+      'El SSRA conmemora 48 años al servicio de la Fuerza Aérea Uruguaya y del país, con actividades institucionales el 18 de agosto en la Base Aérea General Cesáreo L. Berisso.',
+    content:
+      'El Servicio de Sensores Remotos Aeroespaciales (SSRA) de la Fuerza Aérea Uruguaya celebra su 48.º aniversario el 18 de agosto de 2026. Desde su creación, la unidad ha desarrollado capacidades de captación, procesamiento y análisis de información geoespacial al servicio de la defensa nacional, el apoyo operacional de la FAU y el desarrollo del país mediante teleobservación y teledetección. En esta fecha se realizarán actividades conmemorativas en la Base Aérea General Cesáreo L. Berisso, reafirmando el compromiso del personal del SSRA con la excelencia técnica, la custodia del archivo histórico de sensores remotos y la coordinación con el ecosistema institucional en materia aeroespacial.',
+    image: publicUrl('/noticias/ssra-48-aniversario.png'),
+    source: 'SSRA — FAU',
+  },
+  {
     id: '1',
     publishedAt: '2025-12-28',
     date: '28 de diciembre de 2025',

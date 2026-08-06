@@ -1,6 +1,7 @@
 import Section from '../components/Section'
 import { normativasItems } from '../data/normativas'
 import { institution } from '../data/institution'
+import { publicUrl } from '../lib/publicUrl'
 
 export default function NormativasPage() {
   const { name } = institution
@@ -27,15 +28,28 @@ export default function NormativasPage() {
                 </header>
                 <h3>{item.title}</h3>
                 <p>{item.summary}</p>
-                {item.link && (
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="normativas__link"
-                  >
-                    Consultar normativa →
-                  </a>
+                {(item.link || item.downloadPath) && (
+                  <div className="normativas__actions">
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="normativas__link"
+                      >
+                        Consultar en línea →
+                      </a>
+                    )}
+                    {item.downloadPath && (
+                      <a
+                        href={publicUrl(item.downloadPath)}
+                        download
+                        className="normativas__link"
+                      >
+                        Descargar PDF ↓
+                      </a>
+                    )}
+                  </div>
                 )}
               </article>
             </li>

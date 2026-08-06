@@ -1100,6 +1100,12 @@ main > .section:first-child {
   color: var(--steel);
 }
 
+.normativas__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+}
+
 .normativas__link {
   font-size: 0.85rem;
   color: var(--green-light);

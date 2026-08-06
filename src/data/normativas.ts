@@ -4,7 +4,10 @@ export interface NormativaItem {
   reference: string
   date?: string
   summary: string
+  /** Enlace externo para consultar la normativa en línea */
   link?: string
+  /** Ruta local en /public para descargar el PDF */
+  downloadPath?: string
 }
 
 export const normativasItems: NormativaItem[] = [
@@ -16,6 +19,16 @@ export const normativasItems: NormativaItem[] = [
     summary:
       'Establece la misión, funciones y dependencia orgánica del SSRA dentro de la Fuerza Aérea Uruguaya, como unidad encargada de las actividades vinculadas con sensores remotos aeroespaciales.',
     link: 'https://www.impo.com.uy/bases/decretos/369-1991',
+  },
+  {
+    id: 'decreto-260-018',
+    title: 'Procedimiento para el transporte y uso de sensores para relevamiento aéreo',
+    reference: 'Decreto Nº 260/018',
+    date: '2018',
+    summary:
+      'Aprueba el procedimiento para el transporte y uso de sensores aerotransportables en el espacio aéreo uruguayo. Establece el Registro de Sensores Aeroespaciales a cargo del SSRA, los requisitos para operadores y el vínculo con el Permiso de Trabajo Aéreo emitido por DINACIA.',
+    link: 'https://www.impo.com.uy/bases/decretos/260-2018',
+    downloadPath: '/normativas/decreto-260-018.pdf',
   },
   {
     id: 'decreto-71-2022',
@@ -47,5 +60,6 @@ export const normativasItems: NormativaItem[] = [
     reference: 'Tratados y acuerdos aplicables',
     summary:
       'Normativa derivada de compromisos internacionales del Uruguay en observación terrestre, registro de objetos espaciales y uso pacífico del espacio ultraterrestre.',
+    link: 'https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/introouterspacetreaty.html',
   },
 ]

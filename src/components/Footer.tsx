@@ -18,8 +18,6 @@ export default function Footer() {
             <h3 className="footer__heading">Teléfono</h3>
             <p>
               <a href={`tel:${contact.phoneHref}`}>{contact.phone}</a>
-              {' — '}
-              Interno {contact.extension}
             </p>
           </div>
 

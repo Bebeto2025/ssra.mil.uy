@@ -20,9 +20,7 @@ export default function Contact() {
             ☎
           </span>
           <h3>Teléfono</h3>
-          <a href={`tel:${contact.phoneHref}`}>
-            {contact.phone} — Interno {contact.extension}
-          </a>
+          <a href={`tel:${contact.phoneHref}`}>{contact.phone}</a>
           <p>Mesa de ayuda — {name.aic}</p>
         </div>
         <div className="contact__card">

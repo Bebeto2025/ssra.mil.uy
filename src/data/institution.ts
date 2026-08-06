@@ -94,11 +94,10 @@ export const institution = {
   contact: {
     addressLine1: 'Base Aérea General Cesáreo L. Berisso',
     addressLine2: 'Ruta 101, km. 19.500, Canelones, Uruguay',
-    phone: '(+598) 2 200 0000',
-    phoneHref: '+59822000000',
-    extension: '4520',
-    email: 'contacto@ssra.mil.uy',
+    phone: '2604 0021',
+    phoneHref: '+59826040021',
+    email: 'fotosverticales@gmail.com',
     hoursLabel: 'Horarios de atención',
-    hours: ['Lunes a viernes', '08:00 – 16:00 hs'],
+    hours: ['Lunes a viernes', '08:00 – 14:30 hs'],
   },
 } as const
