@@ -21,6 +21,11 @@ export default function Contact() {
           </span>
           <h3>Teléfono</h3>
           <a href={`tel:${contact.phoneHref}`}>{contact.phone}</a>
+          {contact.extensions.map((ext) => (
+            <p key={ext.number}>
+              Interno {ext.number} — {ext.label}
+            </p>
+          ))}
           <p>Mesa de ayuda — {name.aic}</p>
         </div>
         <div className="contact__card">

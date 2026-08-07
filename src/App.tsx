@@ -9,6 +9,7 @@ import CursosPage from './pages/CursosPage'
 import NoticiasPage from './pages/NoticiasPage'
 import NoticiaDetailPage from './pages/NoticiaDetailPage'
 import GaleriaPage from './pages/GaleriaPage'
+import RegistrarSensorPage from './pages/RegistrarSensorPage'
 import UbicacionPage from './pages/UbicacionPage'
 import ContactoPage from './pages/ContactoPage'
 import './App.css'
@@ -30,6 +31,7 @@ function App() {
           <Route path="noticias/:id" element={<NoticiaDetailPage />} />
           <Route path="galeria" element={<GaleriaPage />} />
           <Route path="ubicacion" element={<UbicacionPage />} />
+          <Route path="tramites/registrar-sensor" element={<RegistrarSensorPage />} />
           <Route path="contacto" element={<ContactoPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

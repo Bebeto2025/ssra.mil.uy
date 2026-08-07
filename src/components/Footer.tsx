@@ -19,6 +19,11 @@ export default function Footer() {
             <p>
               <a href={`tel:${contact.phoneHref}`}>{contact.phone}</a>
             </p>
+            {contact.extensions.map((ext) => (
+              <p key={ext.number}>
+                Interno {ext.number} — {ext.label}
+              </p>
+            ))}
           </div>
 
           <div className="footer__block">

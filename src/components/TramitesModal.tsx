@@ -1,31 +1,17 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { cursos, cursoToTramiteId } from '../data/cursos'
 import type { TramiteId, TramiteOption } from '../types/tramites'
 import TramiteForm from './TramiteForm'
 
 const tramitesGenerales: TramiteOption[] = [
   {
-    id: 'registrar-drone',
-    title: 'Registrar drone',
-    description: 'Alta de vehículo aéreo no tripulado en el registro nacional.',
+    id: 'registrar-sensor',
+    title: 'Registrar Sensor',
+    description: 'Alta de sensor aeroespacial en el Registro de Sensores del SSRA.',
     icon: '⬡',
     group: 'tramites',
-  },
-  {
-    id: 'registrar-vuelo-drone',
-    title: 'Registra tu vuelo de drone',
-    description: 'Trámite en DINACIA para trabajos aéreos con dispositivos operados a distancia.',
-    icon: '✈',
-    group: 'tramites',
-    externalLink:
-      'https://www.dinacia.gub.uy/tramite/servicio-de-trabajos-aereos-con-dispositivos-operado-distancia',
-  },
-  {
-    id: 'baja-drone',
-    title: 'Dar de baja drone',
-    description: 'Baja o desactivación de un drone registrado.',
-    icon: '⊘',
-    group: 'tramites',
+    pageLink: '/tramites/registrar-sensor',
   },
   {
     id: 'solicitar-info',
@@ -122,6 +108,23 @@ export default function TramitesModal({
                 ↗
               </span>
             </a>
+          ) : tramite.pageLink ? (
+            <Link
+              to={tramite.pageLink}
+              className="tramites-list__item"
+              onClick={onClose}
+            >
+              <span className="tramites-list__icon" aria-hidden="true">
+                {tramite.icon}
+              </span>
+              <span className="tramites-list__text">
+                <strong>{tramite.title}</strong>
+                <span>{tramite.description}</span>
+              </span>
+              <span className="tramites-list__arrow" aria-hidden="true">
+                →
+              </span>
+            </Link>
           ) : (
             <button
               type="button"

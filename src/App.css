@@ -1037,6 +1037,80 @@ main > .section:first-child {
   color: var(--steel);
 }
 
+/* ── Trámite: Registrar Sensor ── */
+
+.tramite-procedure__back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--green-light);
+  text-decoration: none;
+}
+
+.tramite-procedure__back:hover {
+  color: var(--accent);
+}
+
+.tramite-procedure__intro {
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+}
+
+.tramite-procedure__intro p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.tramite-procedure__steps {
+  max-width: 720px;
+  margin: 0 0 2rem;
+  padding-left: 1.25rem;
+  color: var(--steel);
+  line-height: 1.75;
+}
+
+.tramite-procedure__steps li + li {
+  margin-top: 0.75rem;
+}
+
+.tramite-procedure__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.tramite-procedure__notes {
+  max-width: 720px;
+  padding: 1.25rem 1.5rem;
+  background: var(--glass-panel-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.tramite-procedure__notes p {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--steel);
+}
+
+.tramite-procedure__notes p:last-child {
+  margin-bottom: 0;
+}
+
+.tramite-procedure__notes a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tramite-procedure__notes a:hover {
+  color: var(--text);
+}
+
 /* ── Normativas ── */
 
 .normativas__intro {
@@ -1453,6 +1527,11 @@ main > .section:first-child {
   display: block;
   font-size: 0.95rem;
   margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.contact__card a:hover {
+  color: var(--text);
 }
 
 .contact__card p {
@@ -1899,12 +1978,12 @@ textarea {
 }
 
 .footer__block a {
-  color: var(--green-light);
+  color: var(--text);
   text-decoration: none;
 }
 
 .footer__block a:hover {
-  color: var(--accent);
+  color: var(--text);
 }
 
 .footer__heading {

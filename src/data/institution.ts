@@ -96,6 +96,10 @@ export const institution = {
     addressLine2: 'Ruta 101, km. 19.500, Canelones, Uruguay',
     phone: '2604 0021',
     phoneHref: '+59826040021',
+    extensions: [
+      { number: '11', label: 'Secretaría' },
+      { number: '16', label: 'Atención al Público' },
+    ],
     email: 'fotosverticales@gmail.com',
     hoursLabel: 'Horarios de atención',
     hours: ['Lunes a viernes', '08:00 – 14:30 hs'],
